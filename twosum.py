@@ -14,8 +14,8 @@ def twoSum(nums,target):
         if (diff == nums[i]):
             if type(count[str(diff)]) == list:
                 return count[str(diff)]
-            elif str(diff) in count:
-                return [i,count[str(diff)]]
+        elif str(diff) in count:
+            return [i,count[str(diff)]]
 
 def main():
     op = twoSum([0,4,3,0],0)
